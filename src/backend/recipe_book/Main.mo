@@ -12,7 +12,7 @@ actor {
   /// returns null if there was no previous value, else returns previous value
   public shared func set(k:Text,v:Text): async ?Text {
     if(k == ""){
-      throw Error.reject("Empty string is not a valid key");
+      throw Error.reject("Empty string is not a valid key"); 
     };
     return store.replace(k, v);
   };
