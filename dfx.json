@@ -1,0 +1,12 @@
+{
+    "canisters": {
+      "recipe_book": {
+        "main": "src/backend/recipe_book/Main.mo"
+      },
+      "www": {
+        "dependencies": ["recipe_book"],
+        "type": "assets",
+        "source": ["public"]
+      }
+    }
+  }
