@@ -4,7 +4,7 @@ import { Actor, HttpAgent } from "@dfinity/agent";
 import { idlFactory } from './recipe_book.did.js';
 export { idlFactory } from './recipe_book.did.js';
 // CANISTER_ID is replaced by webpack based on node environment
-export const canisterId = process.env.PHONE_BOOK_CANISTER_ID;
+export const canisterId = process.env.RECIPE_BOOK_CANISTER_ID;
 
 /**
  * 
@@ -32,7 +32,7 @@ export const canisterId = process.env.PHONE_BOOK_CANISTER_ID;
 };
   
 /**
- * A ready-to-use agent for the phone_book canister
+ * A ready-to-use agent for the recipe_book canister
  * @type {import("@dfinity/agent").ActorSubclass<import("./recipe_book.did.js")._SERVICE>}
  */
  export const recipe_book = createActor(canisterId);
