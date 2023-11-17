@@ -15,7 +15,7 @@ Follow directions to install `dfx` if you don't have it yet: https://sdk.dfinity
 
 run `dfx start --background` to start a replica;
 
-run `dfx deploy phone_book` to deploy the backend canister
+run `dfx deploy recipe_book` to deploy the backend canister
 
 run `npm start` to spin up a development server
 
