@@ -59,13 +59,13 @@ const ContactCard = ({ card }) => {
               <React.Fragment key={value._field}>
                 <dt>{value._field}</dt>
                 <dd>
-                  <Picture>
+                  <ProfilePicture>
                     <img
                       style={{ maxWidth: "75px" }}
                       src={atob(value._data)}
                       alt="profile"
                     />
-                  </Picture>
+                  </ProfilePicture>
                 </dd>
               </React.Fragment>
             );
@@ -125,9 +125,9 @@ const IndexPage = () => {
         card.add(input.name, input.value);
       }
     });
-    card.add("photo", buf.toString(image), { mediatype: "image/gif" });
+    card.add("photo", buffer.toString(image), { mediatype: "image/gif" });
 
-    actor?.set(email, JSON.stringify(card.toJSON())).then(() => {
+    actor?.set(name, JSON.stringify(card.toJSON())).then(() => {
       alert("card uploaded!");
       inputs.forEach((input) => {
         input.value = "";
