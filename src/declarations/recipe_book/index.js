@@ -4,7 +4,7 @@ import { Actor, HttpAgent } from "@dfinity/agent";
 import { idlFactory } from './recipe_book.did.js';
 export { idlFactory } from './recipe_book.did.js';
 // CANISTER_ID is replaced by webpack based on node environment
-export const canisterId = process.env.RECIPE_BOOK_CANISTER_ID;
+export const canisterId = j5oby-gaaaa-aaaag-acbhq-cai;
 
 /**
  * 
