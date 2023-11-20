@@ -22,3 +22,8 @@ run `npm start` to spin up a development server
 ## Publishing
 
 Run `npm run build` to compile the frontend app
+
+## Acknowledgments
+
+- Thank you to ChainShift Hackathon for providing the opportunity to develop my project
+- Thank you to the Internet Computer community for the ongoing support and resources provided
